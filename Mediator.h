@@ -1,8 +1,5 @@
 #pragma once
 
-#include <string>
-using namespace std;
-
 class Army;
 
 class Mediator

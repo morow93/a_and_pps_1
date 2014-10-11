@@ -1,5 +1,25 @@
-#include "StandartLibs.h"
-#include "CustomLibs.h"
+using namespace std;
+
+// standart headers
+
+#include <iostream>
+#include <vector>
+
+// custom headers
+
+#include "Unit.h"
+
+#include "Archer.h"
+#include "Infantryman.h"
+#include "Horseman.h"
+
+#include "CompositeUnit.h"
+
+#include "Army.h"
+#include "Mediator.h"
+
+#include "ConcreteArmy.h"
+#include "ConcreteMediator.h"
 
 CompositeUnit* createRomanLegion()
 {

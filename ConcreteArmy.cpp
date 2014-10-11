@@ -1,5 +1,19 @@
-#include "StandartLibs.h"
-#include "CustomLibs.h"
+using namespace std;
+
+// standart headers
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+// custom headers
+
+#include "Mediator.h"
+
+#include "Unit.h"
+#include "CompositeUnit.h"
+#include "Army.h"
+#include "ConcreteArmy.h"
 
 ConcreteArmy::ConcreteArmy(string armyName_, Mediator* mediator) : Army(mediator)
 {

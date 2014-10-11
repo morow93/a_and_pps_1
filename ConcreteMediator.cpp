@@ -1,5 +1,19 @@
-#include "StandartLibs.h"
-#include "CustomLibs.h"
+using namespace std;
+
+// standart header
+
+#include <vector>
+
+// custom headers
+
+#include "Unit.h"
+#include "CompositeUnit.h"
+
+#include "Army.h"
+#include "ConcreteArmy.h"
+
+#include "Mediator.h"
+#include "ConcreteMediator.h"
 
 void ConcreteMediator::SetArmy1(ConcreteArmy *c)
 {
