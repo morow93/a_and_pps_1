@@ -1,9 +1,13 @@
 #pragma once
 
+#include <string>
+
 class Army;
 
 class Mediator
 {
 public:
-	virtual void Send(string const& message, Army *Army) const = 0;
+	Mediator();
+	~Mediator();
+	virtual void Send(std::string const& message, Army *Army) const = 0;
 };
