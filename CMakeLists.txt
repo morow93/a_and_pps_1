@@ -12,7 +12,7 @@ include_directories(
 		ConcreteMediator
 		Horseman
 		Infantryman
-		# Mediator
+		Mediator
 		Unit
 )						# Расположение заголовочных файлов
 
@@ -25,7 +25,7 @@ add_subdirectory(ConcreteArmy)
 add_subdirectory(ConcreteMediator)
 add_subdirectory(Horseman)
 add_subdirectory(Infantryman)
-# add_subdirectory(Mediator)
+add_subdirectory(Mediator)
 add_subdirectory(Unit)				# Добавление подпроектов
 
 target_link_libraries(main 
@@ -36,6 +36,6 @@ target_link_libraries(main
 		ConcreteMediator
 		Horseman
 		Infantryman
-		# Mediator
+		Mediator
 		Unit
 )						# Линковка программы с библиотекой
