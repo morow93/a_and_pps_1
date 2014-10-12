@@ -38,4 +38,5 @@ target_link_libraries(main
 		Infantryman
 		Mediator
 		Unit
+
 )						# Линковка программы с библиотекой

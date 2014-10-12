@@ -7,6 +7,8 @@ using namespace std;
 
 // custom headers
 
+#include "SimpleStaticLibrary\SSLib.h"
+
 #include "Unit\Unit.h"
 
 #include "Archer\Archer.h"
@@ -55,6 +57,8 @@ CompositeUnit* createGreekLegion()
 
 int main()
 {
+	//SSLibNamespace::SSLibClass::Show("BLAH-BLAH");
+
 	ConcreteMediator mediator;
 
 	ConcreteArmy romanArmy("Roman army", &mediator);
