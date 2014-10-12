@@ -7,19 +7,19 @@ using namespace std;
 
 // custom headers
 
-#include "Unit.h"
+#include "Unit\Unit.h"
 
-#include "Archer.h"
-#include "Infantryman.h"
-#include "Horseman.h"
+#include "Archer\Archer.h"
+#include "Infantryman\Infantryman.h"
+#include "Horseman\Horseman.h"
 
-#include "CompositeUnit.h"
+#include "CompositeUnit\CompositeUnit.h"
 
-#include "Army.h"
-#include "Mediator.h"
+#include "Army\Army.h"
+#include "Mediator\Mediator.h"
 
-#include "ConcreteArmy.h"
-#include "ConcreteMediator.h"
+#include "ConcreteArmy\ConcreteArmy.h"
+#include "ConcreteMediator\ConcreteMediator.h"
 
 CompositeUnit* createRomanLegion()
 {
