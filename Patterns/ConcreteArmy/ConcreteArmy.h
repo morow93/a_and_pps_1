@@ -1,11 +1,7 @@
 #pragma once
 
 #include "Mediator/Mediator.h"
-
-#include "Unit/Unit.h"
-#include "CompositeUnit/CompositeUnit.h"
 #include "Army/Army.h"
-#include "ConcreteArmy.h"
 
 class ConcreteArmy :
 	public Army

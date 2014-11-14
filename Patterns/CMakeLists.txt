@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 2.8) 		# Проверка версии CMake
+cmake_minimum_required(VERSION 2.8) 		
                                  
-project(Patterns)				# Название проекта
+project(Patterns)			
 
 set(SOURCE_LIB 
 	Archer/Archer.cpp
@@ -11,7 +11,7 @@ set(SOURCE_LIB
 	Horseman/Horseman.cpp
 	Infantryman/Infantryman.cpp
 	Mediator/Mediator.cpp
-	Unit/Unit.cpp)				# Установка переменной со списком исходников
+	Unit/Unit.cpp)			
 
 include_directories(
   	Archer 
@@ -25,4 +25,4 @@ include_directories(
   	Unit
 )
 
-add_library(Patterns STATIC ${SOURCE_LIB})	# Создание статической библиотеки
+add_library(Patterns STATIC ${SOURCE_LIB})	

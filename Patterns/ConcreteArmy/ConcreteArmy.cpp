@@ -8,11 +8,6 @@ using namespace std;
 
 // custom headers
 
-#include "Mediator/Mediator.h"
-
-#include "Unit/Unit.h"
-#include "CompositeUnit/CompositeUnit.h"
-#include "Army/Army.h"
 #include "ConcreteArmy.h"
 
 ConcreteArmy::ConcreteArmy(string armyName_, Mediator* mediator) : Army(mediator)

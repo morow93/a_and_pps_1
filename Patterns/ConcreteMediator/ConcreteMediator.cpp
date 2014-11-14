@@ -6,13 +6,7 @@ using namespace std;
 
 // custom headers
 
-#include "Unit/Unit.h"
-#include "CompositeUnit/CompositeUnit.h"
-
-#include "Army/Army.h"
 #include "ConcreteArmy/ConcreteArmy.h"
-
-#include "Mediator/Mediator.h"
 #include "ConcreteMediator.h"
 
 void ConcreteMediator::SetArmy1(ConcreteArmy *c)
