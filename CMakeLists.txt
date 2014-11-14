@@ -10,4 +10,6 @@ add_executable(main ${SOURCE_EXE})
 
 add_subdirectory(Patterns) 			
 
-target_link_libraries(main Patterns)		
+include_directories(/usr/include)
+
+target_link_libraries(main GL glut Patterns)		
