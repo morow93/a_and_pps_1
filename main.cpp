@@ -16,6 +16,16 @@ using namespace std;
 #include "ConcreteArmy/ConcreteArmy.h"
 #include "ConcreteMediator/ConcreteMediator.h"
 
+#include <GL/glut.h>
+
+void draw(void) {
+	// Black background
+	glClearColor(0.0f,0.0f,0.0f,1.0f);
+	glClear(GL_COLOR_BUFFER_BIT);
+	//Draw i
+	glFlush();
+}
+
 CompositeUnit* createRomanLegion()
 {
 	CompositeUnit* romanLegion = new CompositeUnit;
@@ -48,7 +58,7 @@ CompositeUnit* createGreekLegion()
 	return greekLegion;
 }
 
-int main()
+int main(int argc, char **argv)
 {
 	ConcreteMediator mediator;
 
@@ -76,6 +86,22 @@ int main()
 
 	delete romanArmy;
 	delete greekArmy;
+
+	glutInit(&argc, argv);
+	/*Setting up The Display
+	/ -RGB color model + Alpha Channel = GLUT_RGBA
+	*/
+	glutInitDisplayMode(GLUT_RGBA|GLUT_SINGLE);
+	//Configure Window Postion
+	glutInitWindowPosition(50, 25);
+	//Configure Window Size
+	glutInitWindowSize(480,480);
+	//Create Window
+	glutCreateWindow("Hello OpenGL");
+	//Call to the drawing function
+	glutDisplayFunc(draw);
+	// Loop require by OpenGL
+	glutMainLoop();
 
 	return 0;
 }
