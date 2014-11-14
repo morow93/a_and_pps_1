@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2) 		# Проверка версии CMake
+cmake_minimum_required(VERSION 2.8) 		# Проверка версии CMake
                                  
 project(Patterns)				# Название проекта
 

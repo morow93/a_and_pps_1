@@ -1,5 +1,8 @@
 #pragma once
 
+#include "Unit/Unit.h"
+#include "CompositeUnit/CompositeUnit.h"
+
 class Mediator;
 
 class Army :
